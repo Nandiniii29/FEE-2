@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Todo App</title>
+
+    <link rel="stylesheet" href="hwtodo.css">
+
+    <script src="https://kit.fontawesome.com/6d2ea823d0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="container">
+
+    <h1><i class="fa-solid fa-list-check"></i> Todo List</h1>
+
+    <div class="input-area">
+
+        <input type="text" id="taskInput" placeholder="Enter a task...">
+
+        <button id="addBtn">
+            <i class="fa-solid fa-plus"></i>
+            Add
+        </button>
+
+    </div>
+
+    <input
+        type="text"
+        id="search"
+        placeholder="🔍 Search task..."
+    >
+
+    <div class="menu">
+
+        <select id="filter">
+            <option value="all">All</option>
+            <option value="active">Active</option>
+            <option value="completed">Completed</option>
+        </select>
+
+        <button id="clearBtn">
+            Clear Completed
+        </button>
+
+    </div>
+
+    <div class="stats">
+
+        <span>Total :
+            <strong id="total">0</strong>
+        </span>
+
+        <span>Completed :
+            <strong id="completed">0</strong>
+        </span>
+
+    </div>
+
+    <div class="progress">
+
+        <div id="progressBar"></div>
+
+    </div>
+
+    <div id="taskList"></div>
+
+</div>
+
+<script src="hwtodo.js"></script>
+
+</body>
+</html>
