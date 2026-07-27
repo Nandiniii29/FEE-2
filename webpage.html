@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="page">
+        <nav class="topbar">
+            <div class="brand">Moonlit Magic</div>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </div>
+            <a href="#" class="nav-link">Need help?</a>
+        </nav>
+
+        <div class="login-wrapper">
+            <div class="login-card">
+                <div class="icon-circle">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <h1>Welcome Back</h1>
+                <p>Sign in to continue to your account</p>
+
+                <form id="authForm">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" list="email-list" autocomplete="on" required>
+                    <datalist id="email-list"></datalist>
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+                    <div class="options">
+                        <label class="remember">
+                            <input type="checkbox" id="rememberMe">
+                            <span>Remember me</span>
+                        </label>
+                        <a href="#">Forgot password?</a>
+                    </div>
+
+                    <div class="feedback" id="feedback"></div>
+
+                    <button type="submit" id="actionBtn">Login</button>
+                </form>
+
+                <div class="signup-text">
+                    <span id="authPrompt">Don’t have an account?</span> <a href="#" id="toggleAuth">Sign up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="webpage.js"></script>
+</body>
+</html>
